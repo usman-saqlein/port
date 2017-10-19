@@ -1,0 +1,70 @@
+<?php
+
+function gavias_elements_check_link($uri){
+    if(preg_match( '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i' ,$uri)){
+      return $uri;
+    }
+    else{
+        return false;
+    }
+}
+
+function gavias_elements_list_shortcodes(){
+  return $shortcodes = array(
+    'gsc_accordion',
+    'gsc_box_color', 
+    'gsc_box_number',
+    'gsc_box_info',
+    'gsc_box_text',
+    'gsc_call_to_action',
+    'gsc_chart',
+    'gsc_code',
+    'gsc_column',
+    'gsc_counter',
+    'gsc_drupal_block',
+    'gsc_heading',
+    'gsc_icon_box',
+    'gsc_image',
+    'gsc_our_team',
+    'gsc_pricing_item',
+    'gsc_progress',
+    'gsc_tabs',
+    'gsc_video_box',
+    //'gsc_multi_scroll',
+    'gsc_gmap',
+    'gsc_button',
+    'gsc_view',
+    'gsc_quote_text',
+    //'gsc_work_process',
+    'gsc_image_content',
+    'gsc_services_carousel',
+    'gsc_our_history',
+    'gsc_gallery',
+    'gsc_our_partners',
+    'gsc_download',
+    'gsc_socials',
+    'gsc_info_background',
+    'gsc_box_parallax',
+    'gsc_testimonial_single',
+    'gsc_sliderlayer_block'
+  );
+}
+
+$shortcodes = gavias_elements_list_shortcodes();
+foreach( $shortcodes as $sc ){
+    if(file_exists(drupal_get_path('module', 'gavias_elements') . '/elements/' . $sc . '.php')){
+        $sc_path = drupal_get_path('module', 'gavias_elements') . '/elements/' . $sc . '.php';
+        require($sc_path);
+        $_class = '\\Drupal\gavias_blockbuilder\shortcodes\\' . $sc;
+        if( class_exists($_class) ){
+          $s = new $_class;
+          if(method_exists($s, 'load_shortcode') && function_exists('add_shortcode')){
+                $s->load_shortcode();
+            }
+        }
+    }
+}  
+
+function gavias_elements_update_projects_alter(&$projects){
+   unset($projects['gavias_elements']);
+}

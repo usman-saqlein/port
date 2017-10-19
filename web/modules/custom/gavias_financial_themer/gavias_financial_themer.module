@@ -1,0 +1,104 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\FieldDefinition;
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function gavias_financial_themer_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id) {
+  $form['gva_node_settings'] = array(
+    '#type'   => 'details',
+    '#title'  => t('Node Settings'),
+    '#group'  => 'advanced',
+    '#open'   => FALSE,
+    '#access' => TRUE,
+    '#attributes' => array('class' => array('node-class-form')),
+  );
+  $form['gva_node_class']['#group'] = 'gva_node_settings';
+  $form['gva_header']['#group'] = 'gva_node_settings';
+  $form['gva_box_layout']['#group'] = 'gva_node_settings';
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function gavias_financial_themer_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'node') {
+    $fields['gva_node_class'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('CSS class(es)'))
+      ->setDisplayOptions('form', array(
+        'type'    => 'string_textfield',
+        'weight'  => 35,
+      ))
+      ->setDisplayConfigurable('form', TRUE);
+
+      $fields['gva_header'] = BaseFieldDefinition::create('list_string')
+      ->setSetting('allowed_values', [
+              'header'    => t('Header default'),
+              'header-2'  => t('Header v2'),
+              'header-3'  => t('Header v3'),
+              'header-4'  => t('Header v4'),
+              'header-5'  => t('Header v5'),
+              ])
+      ->setLabel(t('Header'))
+      ->setDisplayOptions('form', array(
+        'type'    => 'options_select',
+        'weight'  => 35,
+      ))
+      ->setDisplayConfigurable('form', TRUE);
+
+      $fields['gva_box_layout'] = BaseFieldDefinition::create('list_string')
+      ->setSetting('allowed_values', [
+          'boxed' => t('Boxed'),
+          'Wide'  => t('Wide')
+        ])
+      ->setLabel(t('Layout Box'))
+      ->setDisplayOptions('form', array(
+        'type'    => 'options_select',
+        'weight'  => 35,
+      ))
+      ->setDisplayConfigurable('form', TRUE);
+
+    return $fields;
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function gavias_financial_themer_preprocess_html(&$variables) {
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+    $node = \Drupal\node\Entity\Node::load($path_args[2]);
+    if($node && $node->hasField('gva_node_class')){
+      $class_body = $node->get('gva_node_class')->getValue();
+      if(isset($class_body) && !empty($class_body[0])) {
+          $variables['attributes']['class'][] = $class_body[0]['value'];
+      }
+    }
+    if($node && $node->hasField('gva_box_layout')){
+      $box_layout = $node->get('gva_box_layout')->getValue();
+      if(isset($box_layout) && !empty($box_layout[0])) {
+          $variables['attributes']['class'][] = $box_layout[0]['value'];
+      }
+    }
+  }
+}
+
+function gavias_financial_themer_preprocess_page(&$variables) {
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+      $node = \Drupal\node\Entity\Node::load($path_args[2]);
+      $variables['gva_header'] = '';
+      if($node && $node->hasField('gva_header')){
+        $gva_header = $node->get('gva_header')->getValue();
+        if(isset($gva_header) && !empty($gva_header[0])) {
+          $variables['gva_header'] = $gva_header[0]['value'];
+        }
+      }
+  }
+}
