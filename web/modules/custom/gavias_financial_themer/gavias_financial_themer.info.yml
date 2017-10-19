@@ -1,0 +1,7 @@
+type: module
+name : Gavias Financial Themer
+description : Gavias Financial Themer
+package: gavias
+core: '8.x'
+project: 'gavias_financial_themer'
+datestamp: 1466760631

@@ -1,0 +1,79 @@
+{%
+  set classes = [
+    'node',
+    'node-detail',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+
+<!-- Start Display article for teaser page -->
+{% if teaser == true %} 
+  <div class="dh-container portfolio-v1 isotope-item margin-bottom-30 grid">      
+    {{ content.field_image}}
+    <div class="portfolio-content dh-overlay">
+        <div class="content">
+           <div class="content-inner">
+              <div class="title"> 
+                 <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+              </div>  
+              <div class="category">
+                 {{ content.field_portfolio_tags }}
+              </div>  
+           </div>    
+        </div>
+    </div>
+  </div>
+
+<!-- End Display article for teaser page -->
+
+{% else %}
+<!-- Start Display article for detail page -->
+
+<article{{ attributes.addClass(classes) }}>
+  <div class="post-block">
+    <div class="post-content">
+      <header>
+        <div class="widget gsc-heading align-left style-1 small text-dark">
+          <h2 class="title"><span>{{ label }}</span></h2>            
+          <div class="line"><span class="one"></span><span class="second"></span><span class="three"></span></div>
+        </div>    
+      </header>
+      {% if display_submitted %}
+        <div class="node__meta hidden">
+          {{ author_picture }}
+          <span{{ author_attributes }}>
+            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          </span>
+          {{ metadata }}
+        </div>
+      {% endif %}
+
+      <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        {{ content|without('comment') }}
+      </div>
+      
+      {% if gva_content_shortcode %}
+        <div class="gavias-content-blockbuilder">{{ gva_content_shortcode|raw }}</div>
+      {% endif %}
+
+      {% if content.comment %}
+        <div id="node-single-comment">
+          <div id="comments">
+            {{ content.comment }}
+          </div>  
+        </div>
+      {% endif %}  
+
+    </div>
+
+  </div>
+
+</article>
+
+<!-- End Display article for detail page -->
+{% endif %}
