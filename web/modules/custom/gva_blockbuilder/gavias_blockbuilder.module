@@ -95,10 +95,10 @@ function gavias_blockbuilder_preprocess_blockbuilder(&$vars){
   $vars['theme_hook_suggestions'][] = 'blockbuilder__block';
   $params = $vars['params'];
   $id = $vars['id'];
-	$html_id = drupal_html_id('gavias-blockbuilder-' . $id);
-	$vars['id'] = $html_id;
-	$vars['attributes_array']['id'] = $html_id;
-	$vars['content'] = $params;
+  $html_id = drupal_html_id('gavias-blockbuilder-' . $id);
+  $vars['id'] = $html_id;
+  $vars['attributes_array']['id'] = $html_id;
+  $vars['content'] = $params;
 }
 
 /**
@@ -138,7 +138,7 @@ function gavias_blockbuilder_form_alter(&$form, FormStateInterface $form_state, 
       '#title' => 'Layout',
       '#default_value' => \Drupal::config('gavias_blockbuilder.settings')->get('gva-layout-' . $node->id()),
       '#options'  => array(
-      	''   => 'Default',
+        ''   => 'Default',
         'fw' => 'Fullwith no sidebar (use for block builder)',
         'fw_sidebar' => 'Fullwidth width sidebar',
         'container_sidebar' => 'Container width sidebar',
@@ -178,7 +178,7 @@ function gavias_blockbuilder_form_alter(&$form, FormStateInterface $form_state, 
       '#maxlength' => 255,
     );
 
-    $form['actions']['publish']['#submit'][] = 'gavias_blockbuilder_node_page_form_submit';
+    $form['actions']['submit']['#submit'][] = 'gavias_blockbuilder_node_page_form_submit';
   }
 }
 
