@@ -1,0 +1,41 @@
+uuid: 58f79402-c378-4ee0-95a1-3c1ada9e2792
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b881620-2360-43bc-a7d4-ca6211b0e5f0'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_companypresentation
+theme: gavias_financial
+region: sidebar_right
+weight: -9
+provider: null
+plugin: 'block_content:0b881620-2360-43bc-a7d4-ca6211b0e5f0'
+settings:
+  id: 'block_content:0b881620-2360-43bc-a7d4-ca6211b0e5f0'
+  label: ' Company presentation'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: "/blogs-masonry\r\n/blogs-grid\r\n/portfolio-1\r\n/portfolio\r\n/portfolio-3\r\n/portfolio-2"
+    negate: true
+    context_mapping: {  }

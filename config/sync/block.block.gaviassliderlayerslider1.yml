@@ -1,0 +1,30 @@
+uuid: 34dc4997-cbab-4d80-855b-808f9eddb875
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - gavias_sliderlayer
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gaviassliderlayerslider1
+theme: gavias_financial
+region: other
+weight: -12
+provider: null
+plugin: 'gavias_sliderlayer_block:gavias_sliderlayer_block____1'
+settings:
+  id: 'gavias_sliderlayer_block:gavias_sliderlayer_block____1'
+  label: 'Gavias SliderLayer - Slider #1'
+  provider: gavias_sliderlayer
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

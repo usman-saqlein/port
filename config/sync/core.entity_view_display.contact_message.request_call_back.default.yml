@@ -1,0 +1,38 @@
+uuid: 09926816-2765-4ffd-a34b-7f333a321b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.request_call_back
+    - field.field.contact_message.request_call_back.field_contact_help
+  module:
+    - options
+id: contact_message.request_call_back.default
+targetEntityType: contact_message
+bundle: request_call_back
+mode: default
+content:
+  field_contact_help:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  langcode:
+    type: language
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  message:
+    type: basic_string
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

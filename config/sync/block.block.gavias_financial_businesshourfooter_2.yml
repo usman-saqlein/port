@@ -1,0 +1,29 @@
+uuid: 445358f1-7609-4d96-9e9e-dbe93be1b37f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:467317d6-ceb0-441e-aa12-ba994d1c9835'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_businesshourfooter_2
+theme: gavias_financial
+region: offcanvas
+weight: -11
+provider: null
+plugin: 'block_content:467317d6-ceb0-441e-aa12-ba994d1c9835'
+settings:
+  id: 'block_content:467317d6-ceb0-441e-aa12-ba994d1c9835'
+  label: 'Business hour '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

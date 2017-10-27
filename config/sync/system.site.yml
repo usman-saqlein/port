@@ -1,0 +1,12 @@
+uuid: 77b896ee-32b4-4118-8000-0d89344a315d
+name: 'Usman Saqlain Portfolio'
+mail: usaqlain01@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: /node/106
+  front: /node/142
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en

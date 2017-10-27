@@ -1,0 +1,56 @@
+uuid: ca61c40e-c2dd-401f-92ba-926860c4c6f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.request_call_back
+    - field.field.contact_message.request_call_back.field_contact_help
+id: contact_message.request_call_back.default
+targetEntityType: contact_message
+bundle: request_call_back
+mode: default
+content:
+  field_contact_help:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  mail:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  message:
+    type: string_textarea
+    weight: 4
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  preview:
+    weight: 40
+    region: content
+  subject:
+    type: string_textfield
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  copy: true

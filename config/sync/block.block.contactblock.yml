@@ -1,0 +1,33 @@
+uuid: 05560bed-043c-486d-b5b3-a436b81b0eba
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - block_visibility_groups
+    - contact_block
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: contactblock
+theme: gavias_financial
+region: other
+weight: -15
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact form '
+  provider: contact_block
+  label_display: '0'
+  contact_form: feedback
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

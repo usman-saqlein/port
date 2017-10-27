@@ -1,0 +1,25 @@
+uuid: 9c806f96-920a-4042-82d0-7569b190eccd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6a74724d-d485-4216-a560-962e52758fde'
+  module:
+    - block_content
+  theme:
+    - gavias_financial
+id: gavias_financial_copyright
+theme: gavias_financial
+region: copyright
+weight: -16
+provider: null
+plugin: 'block_content:6a74724d-d485-4216-a560-962e52758fde'
+settings:
+  id: 'block_content:6a74724d-d485-4216-a560-962e52758fde'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

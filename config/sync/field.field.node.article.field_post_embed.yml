@@ -1,0 +1,19 @@
+uuid: f1097428-9f84-472e-a91a-26c6f00cb183
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_embed
+    - node.type.article
+id: node.article.field_post_embed
+field_name: field_post_embed
+entity_type: node
+bundle: article
+label: 'Embed Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

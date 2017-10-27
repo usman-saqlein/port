@@ -1,0 +1,18 @@
+uuid: 4e48c00c-9e02-4d6f-afbb-bbd3a303dbdd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gavias_financial
+id: gavias_financial_local_actions
+theme: gavias_financial
+region: help
+weight: -14
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

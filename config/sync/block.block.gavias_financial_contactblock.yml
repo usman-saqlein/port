@@ -1,0 +1,33 @@
+uuid: 0381f3a4-cb61-43dd-a465-6906733769c0
+langcode: en
+status: false
+dependencies:
+  config:
+    - contact.form.request_call_back
+  module:
+    - block_visibility_groups
+    - contact_block
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_contactblock
+theme: gavias_financial
+region: other
+weight: -14
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact form Request Call Back'
+  provider: contact_block
+  label_display: '0'
+  contact_form: request_call_back
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

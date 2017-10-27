@@ -1,0 +1,34 @@
+uuid: 29b83da3-a3ef-4172-9a8e-147657605584
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - simplenews
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_simplenewssubscription
+theme: gavias_financial
+region: other
+weight: -13
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Newsletter signup'
+  provider: simplenews
+  label_display: '0'
+  newsletters:
+    default: default
+  message: ''
+  unique_id: 68018ed0-b595-40cf-90f5-a9efb2806680
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: e5b61bef-f791-45a2-bec4-6cdb7d1d643d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - dropdown_language
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: dropdownlanguageselector
+theme: gavias_financial
+region: language
+weight: 0
+provider: null
+plugin: dropdown_language
+settings:
+  id: dropdown_language
+  label: 'Dropdown Language Selector'
+  provider: dropdown_language
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

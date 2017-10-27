@@ -1,0 +1,20 @@
+uuid: 195e694f-927d-40b3-87b4-16a9d5ed457c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gavias_financial
+id: gavias_financial_searchform
+theme: gavias_financial
+region: search
+weight: -11
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

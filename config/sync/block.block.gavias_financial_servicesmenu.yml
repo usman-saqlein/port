@@ -1,0 +1,35 @@
+uuid: 37dfbe43-84d1-4a36-bbbe-329b531295bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.right_sidebar_service
+    - system.menu.services-menu
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_servicesmenu
+theme: gavias_financial
+region: sidebar_right
+weight: -12
+provider: null
+plugin: 'system_menu_block:services-menu'
+settings:
+  id: 'system_menu_block:services-menu'
+  label: 'Services Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: right_sidebar_service
+    context_mapping: {  }

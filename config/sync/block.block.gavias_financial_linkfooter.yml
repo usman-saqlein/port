@@ -1,0 +1,35 @@
+uuid: 533d9a5c-6a17-434a-acf8-b282658fbe11
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e03afdfc-b255-481b-9605-5a0e153ccacf'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_linkfooter
+theme: gavias_financial
+region: footer_second
+weight: -11
+provider: null
+plugin: 'block_content:e03afdfc-b255-481b-9605-5a0e153ccacf'
+settings:
+  id: 'block_content:e03afdfc-b255-481b-9605-5a0e153ccacf'
+  label: 'Link Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
