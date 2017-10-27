@@ -1,0 +1,35 @@
+uuid: f302252f-8e91-4354-ad20-a5ac2d573f66
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0c1ecc6e-1d39-4ec0-a502-2c557762945e'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_contactinfo
+theme: gavias_financial
+region: footer_first
+weight: -11
+provider: null
+plugin: 'block_content:0c1ecc6e-1d39-4ec0-a502-2c557762945e'
+settings:
+  id: 'block_content:0c1ecc6e-1d39-4ec0-a502-2c557762945e'
+  label: 'Contact info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: 2aac8411-1ccb-45ba-9f6d-33be652c69fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gavias_financial
+id: gavias_financial_content
+theme: gavias_financial
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

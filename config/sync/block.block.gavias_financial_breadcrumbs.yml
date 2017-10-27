@@ -1,0 +1,40 @@
+uuid: e10c4682-27ec-4128-8917-e436727b7e62
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    breadcrumb_background_image_path: ''
+    breadcrumb_background_color: ''
+    breadcrumb_background_position: 'center top'
+    breadcrumb_background_repeat: no-repeat
+    breadcrumb_color_style: text-dark
+    classes: ''
+id: gavias_financial_breadcrumbs
+theme: gavias_financial
+region: breadcrumbs
+weight: -15
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/142\r\n/node/143\r\n/node/144\r\n/node/145\r\n/node/146\r\n/node/147\r\n/node/148\r\n/node/158\r\n/node/157\r\n/node/159\r\n/node/174\r\n/node/175"
+    negate: true
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

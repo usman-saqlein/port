@@ -1,0 +1,41 @@
+uuid: 3eecd2e6-b2f1-4c9f-aedd-774377642f3a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:58fb1c44-c071-45ed-a959-597e9cd5d23a'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_howcanwehelpyou
+theme: gavias_financial
+region: sidebar_right
+weight: -10
+provider: null
+plugin: 'block_content:58fb1c44-c071-45ed-a959-597e9cd5d23a'
+settings:
+  id: 'block_content:58fb1c44-c071-45ed-a959-597e9cd5d23a'
+  label: 'How can we help you ?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: "/blogs-masonry\r\n/blogs-grid\r\n/portfolio-1\r\n/portfolio\r\n/portfolio-3\r\n/portfolio-2"
+    negate: true
+    context_mapping: {  }

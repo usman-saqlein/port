@@ -1,0 +1,26 @@
+uuid: e6c26ef4-06da-4897-a30a-9a9181b1b370
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+id: right_sidebar_service
+label: 'Right sidebar for service page only'
+logic: or
+conditions:
+  243a08cf-dc33-4cd0-a0fc-374dd99ae067:
+    id: 'entity_bundle:node'
+    bundles:
+      service: service
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 243a08cf-dc33-4cd0-a0fc-374dd99ae067
+  50b57663-4a41-48b4-a8a9-934a4b4bf77b:
+    id: request_path
+    pages: /node/156
+    negate: false
+    context_mapping: {  }
+    uuid: 50b57663-4a41-48b4-a8a9-934a4b4bf77b
+allow_other_conditions: true

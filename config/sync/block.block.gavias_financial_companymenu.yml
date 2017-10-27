@@ -1,0 +1,39 @@
+uuid: 2368ab1b-4c12-41ca-bb21-bffc5b65652b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.company-menu
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_financial_companymenu
+theme: gavias_financial
+region: sidebar_right
+weight: -11
+provider: null
+plugin: 'system_menu_block:company-menu'
+settings:
+  id: 'system_menu_block:company-menu'
+  label: 'Company Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: "/team-grid\r\n/team-list\r\n/node/163\r\n/node/164\r\n/node/165\r\n/node/166\r\n/node/167"
+    negate: false
+    context_mapping: {  }

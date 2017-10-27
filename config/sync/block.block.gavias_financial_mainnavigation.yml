@@ -1,0 +1,24 @@
+uuid: cd3e5aa4-d930-40f9-8b7c-30f35250839d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - gavias_financial
+id: gavias_financial_mainnavigation
+theme: gavias_financial
+region: main_menu
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

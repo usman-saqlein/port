@@ -1,0 +1,31 @@
+uuid: 819c1838-3d40-4bf8-a000-a4c0f05d723c
+langcode: en
+status: true
+dependencies:
+  module:
+    - gavias_blockbuilder
+name: 'Restricted HTML'
+format: restricted_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  shortcode:
+    id: shortcode
+    provider: gavias_blockbuilder
+    status: true
+    weight: 0
+    settings: {  }
+  shortcode_corrector:
+    id: shortcode_corrector
+    provider: gavias_blockbuilder
+    status: true
+    weight: 0
+    settings: {  }
