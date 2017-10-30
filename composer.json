@@ -27,6 +27,7 @@
         "drupal/ctools": "^3.0",
         "drupal/dropdown_language": "^1.2",
         "drupal/field_collection": "^1.0@alpha",
+        "drupal/gdoc_field": "^1.0",
         "drupal/image_url_formatter": "^1.0@beta",
         "drupal/pathauto": "^1.0",
         "drupal/simplenews": "^1.0@alpha",
