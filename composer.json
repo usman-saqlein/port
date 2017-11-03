@@ -33,6 +33,7 @@
         "drupal/simplenews": "^1.0@alpha",
         "drupal/smtp": "^1.0@beta",
         "drupal/token": "^1.0",
+        "drupal/user_default_page": "1.x-dev",
         "drupal/views_infinite_scroll": "^1.5",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.3.0",
