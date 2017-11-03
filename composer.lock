@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "91cc53406df9f41a071d052831936af5",
+    "content-hash": "1fd719869b24f23c4b18f2c76ddb7e61",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2023,6 +2023,61 @@
             "homepage": "https://www.drupal.org/project/image_url_formatter",
             "support": {
                 "source": "http://cgit.drupalcode.org/image_url_formatter"
+            }
+        },
+        {
+            "name": "drupal/jquery_countdown_timer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/jquery_countdown_timer",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_countdown_timer-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "073e1e2bfa63c9f6bcf4065b46b1299b4e21756b"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1459313791",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Pajdzik",
+                    "homepage": "https://www.drupal.org/user/160555"
+                },
+                {
+                    "name": "btopro",
+                    "homepage": "https://www.drupal.org/user/24286"
+                },
+                {
+                    "name": "mimran",
+                    "homepage": "https://www.drupal.org/user/2712535"
+                }
+            ],
+            "description": "This module provides a block with a jQuery countdown timer",
+            "homepage": "https://www.drupal.org/project/jquery_countdown_timer",
+            "support": {
+                "source": "http://cgit.drupalcode.org/jquery_countdown_timer"
             }
         },
         {
