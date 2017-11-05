@@ -28,6 +28,7 @@
         "drupal/dropdown_language": "^1.2",
         "drupal/field_collection": "^1.0@alpha",
         "drupal/gdoc_field": "^1.0",
+        "drupal/iframe": "^1.7",
         "drupal/image_url_formatter": "^1.0@beta",
         "drupal/jquery_countdown_timer": "^1.1",
         "drupal/pathauto": "^1.0",
