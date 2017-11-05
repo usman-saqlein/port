@@ -205,6 +205,10 @@ a.disable {
   cursor: default;
 }
 
+iframe.single-portfolio-node {
+  margin-left: 1%;
+}
+
 /************************* Pagination ************************/
 .pager .paginations {
   border-radius: 5px;
