@@ -9913,6 +9913,10 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
     display: none;
   }
 }
+.bottom-contact-bar{
+    float: none;
+    display: inline-block;
+}
 .menu-bar {
   height: 32px;
   width: 36px;
@@ -10230,3 +10234,4 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
 .gavias_customize_form .form-group.action input#gavias_customize_reset {
   background: #f0ad4e;
 }
+
