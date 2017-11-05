@@ -200,9 +200,21 @@ table > thead > tr > td {
   padding: 0 !important;
 }
 
-a.disable {
+/*a.disable {
   pointer-events: none;
   cursor: default;
+}*/
+a {
+  color: #5eb4e7 !important;
+}
+a:hover {
+  color: #000 !important;
+}
+div.item > div.content-inner > div.title > a {
+  color: #000 !important;
+}
+div.item > div.content-inner > div.title > a:hover {
+  color: #000 !important;  
 }
 
 /************************* Pagination ************************/
