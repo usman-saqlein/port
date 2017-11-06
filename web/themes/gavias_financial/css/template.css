@@ -210,13 +210,21 @@ a {
 a:hover {
   color: #000 !important;
 }
+a:active {
+  color: #000 !important;
+}
 div.item > div.content-inner > div.title > a {
   color: #000 !important;
 }
 div.item > div.content-inner > div.title > a:hover {
   color: #000 !important;  
 }
-
+a.btn-theme {
+  color: #fff !important;
+}
+a.btn-theme:hover {
+  color: #5eb4e7 !important;
+}
 iframe.single-portfolio-node {
   margin-left: 1%;
 }
