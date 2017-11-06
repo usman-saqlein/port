@@ -245,6 +245,35 @@ iframe.single-portfolio-node {
 span.file--mime-application-pdf > a {
   color: #000 !important;
 }
+.field.field--type-iframe.field__item > iframe{
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  width: 80% !important;
+  height: 400px !important;
+  border: 1px solid black;
+}
+
+iframe.gdoc-field {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  width: 80% !important;
+  height: 400px !important;
+  border: 1px solid black !important;
+}
+
+div#block-resumeusmansaqleinupdatedoct27th2017 > h2.block-title span{
+  color: #000;
+}
+
+div#block-resumeusmansaqleinupdatedoct25th2017 > h2.block-title span{
+  color: #000;
+}
+
+a.download-resume-button {
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 5%;
+}
 
 /*Style Overrides end.*/
 
@@ -286,7 +315,6 @@ span.file--mime-application-pdf > a {
 #edit-preview:hover {
   background: #8ac9ee;
 }
-
 .breadcrumb-content-inner {
   margin-bottom: 30px;
   text-align: center;
