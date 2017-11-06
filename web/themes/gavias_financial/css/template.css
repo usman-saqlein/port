@@ -261,6 +261,10 @@ iframe.gdoc-field {
   border: 1px solid black !important;
 }
 
+div.gdoc-filename > a {
+  display: none;
+}
+
 div#block-resumeusmansaqleinupdatedoct27th2017 > h2.block-title span{
   color: #000;
 }
