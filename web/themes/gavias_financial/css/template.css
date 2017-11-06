@@ -200,10 +200,18 @@ table > thead > tr > td {
   padding: 0 !important;
 }
 
+/*
+
+Quick Style Over-rides. 
+@todo: move to proper templates and implement todown pattern;
+
+*/
+
 /*a.disable {
   pointer-events: none;
   cursor: default;
 }*/
+
 a {
   color: #5eb4e7 !important;
 }
@@ -225,9 +233,20 @@ a.btn-theme {
 a.btn-theme:hover {
   color: #5eb4e7 !important;
 }
+div.gdoc-filename > a { 
+  font-size: 12px;
+}
+div.button-action > a[href="/code-samples"]:hover { 
+  background: #DCDCDC !important;
+}
 iframe.single-portfolio-node {
   margin-left: 1%;
 }
+span.file--mime-application-pdf > a {
+  color: #000 !important;
+}
+
+/*Style Overrides end.*/
 
 /************************* Pagination ************************/
 .pager .paginations {
