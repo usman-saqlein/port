@@ -236,8 +236,11 @@ a.btn-theme:hover {
 div.gdoc-filename > a { 
   font-size: 12px;
 }
-div.button-action > a[href="/code-samples"]:hover { 
+div.button-action > a[href="/portfolio"]:hover { 
   background: #DCDCDC !important;
+}
+div.button-action > a[href="/home"]:hover { 
+  background: #666666 !important;
 }
 iframe.single-portfolio-node {
   margin-left: 1%;
@@ -252,7 +255,9 @@ span.file--mime-application-pdf > a {
   height: 400px !important;
   border: 1px solid black;
 }
-
+div#block-ccnwebsite > div.block-content > .field.field--type-iframe.field__item > iframe{
+  min-height: 600px !important;
+}
 iframe.gdoc-field {
   margin-left: 10% !important;
   margin-right: 10% !important;
@@ -279,6 +284,15 @@ a.download-resume-button {
   margin-top: 5%;
 }
 
+.widget.gsc-heading.align-left.style-1.small.text-dark > h2.title {
+  display: none !important;
+}
+.widget.gsc-heading.align-left.style-1.small.text-dark > div.line {
+  display: none !important;
+}
+article.contextual-region.node.node--type-page.node--promoted.node--sticky.node--view-mode-full{
+  /*top: 10px;*/
+}
 /*Style Overrides end.*/
 
 /************************* Pagination ************************/
