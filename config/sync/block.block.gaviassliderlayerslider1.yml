@@ -6,6 +6,7 @@ dependencies:
     - block_visibility_groups
     - gavias_sliderlayer
     - gaviasthemer
+    - system
   theme:
     - gavias_financial
 third_party_settings:
@@ -27,4 +28,9 @@ visibility:
     id: condition_group
     negate: false
     block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /bbtest
+    negate: false
     context_mapping: {  }

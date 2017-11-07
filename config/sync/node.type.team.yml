@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
-name: Team
+    available_menus: {  }
+    parent: ''
+name: Experience
 type: team
-description: ''
+description: 'Relevant Experience | Old Team'
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

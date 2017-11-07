@@ -1,0 +1,29 @@
+uuid: 207939a6-cfff-466e-bbdd-9fa8df472d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.testingcontenttype
+  module:
+    - iframe
+id: node.testingcontenttype.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: testingcontenttype
+label: iframe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '1'
+  scrolling: auto
+  transparency: '0'
+  tokensupport: '2'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

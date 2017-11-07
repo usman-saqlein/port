@@ -1,0 +1,17 @@
+uuid: e5a8bae3-194e-4c25-b307-bf0f7e14844a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: TestingContentType
+type: testingcontenttype
+description: 'Used for Testing'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

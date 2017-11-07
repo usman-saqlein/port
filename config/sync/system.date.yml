@@ -1,8 +1,8 @@
 country:
-  default: AU
-first_day: 0
+  default: US
+first_day: 1
 timezone:
-  default: Asia/Bangkok
+  default: America/Chicago
   user:
     configurable: true
     warn: false

@@ -1,0 +1,41 @@
+uuid: 7f8d49e1-46dd-4309-be36-dd231991f8c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:ef56b247-652a-4143-bb53-8dde2596daaf'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: creatingfixturesiframe
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:ef56b247-652a-4143-bb53-8dde2596daaf'
+settings:
+  id: 'block_content:ef56b247-652a-4143-bb53-8dde2596daaf'
+  label: 'Creating Fixtures IFRAME'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /ihome
+    negate: false
+    context_mapping: {  }

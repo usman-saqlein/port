@@ -1,0 +1,11 @@
+uuid: caaa2e01-ac3c-433d-990c-188a350c0cdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.team
+id: node.team
+target_entity_type_id: node
+target_bundle: team
+default_langcode: site_default
+language_alterable: false

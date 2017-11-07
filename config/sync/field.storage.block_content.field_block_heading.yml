@@ -1,14 +1,16 @@
-uuid: 2ddd339e-68a2-4f66-8d43-16989bfbc554
+uuid: c48f9a58-b6a9-40da-9ff2-c72ea1e51d32
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_team_quote
-field_name: field_team_quote
-entity_type: node
-type: string_long
+    - block_content
+id: block_content.field_block_heading
+field_name: field_block_heading
+entity_type: block_content
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

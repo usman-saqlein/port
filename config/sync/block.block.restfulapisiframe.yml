@@ -1,0 +1,41 @@
+uuid: 5cd8b75d-cb7b-41af-ab54-60b8ae39bcfc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:13eb88f4-15d3-4412-b893-ef1a3cf26938'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: restfulapisiframe
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:13eb88f4-15d3-4412-b893-ef1a3cf26938'
+settings:
+  id: 'block_content:13eb88f4-15d3-4412-b893-ef1a3cf26938'
+  label: 'Restful APIs IFRAME'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /iframe
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 80b6fca5-199a-40df-85e1-1921be49972a
+langcode: en
+status: true
+dependencies: {  }
+name: SEO
+vid: seo
+description: 'SEO tags to assist making content better @ SEO -> FUTURE'
+hierarchy: 0
+weight: 0

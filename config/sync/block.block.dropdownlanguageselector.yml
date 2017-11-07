@@ -1,11 +1,12 @@
 uuid: e5b61bef-f791-45a2-bec4-6cdb7d1d643d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - block_visibility_groups
     - dropdown_language
     - gaviasthemer
+    - system
   theme:
     - gavias_financial
 third_party_settings:
@@ -22,9 +23,15 @@ settings:
   label: 'Dropdown Language Selector'
   provider: dropdown_language
   label_display: '0'
+  labels: null
 visibility:
   condition_group:
     id: condition_group
     negate: false
     block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /home
+    negate: true
     context_mapping: {  }

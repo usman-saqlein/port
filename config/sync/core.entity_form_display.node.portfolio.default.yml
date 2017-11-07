@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_code_sample
     - field.field.node.portfolio.field_portfolio_images
     - field.field.node.portfolio.field_portfolio_information
     - field.field.node.portfolio.field_portfolio_tags
     - image.style.thumbnail
     - node.type.portfolio
   module:
+    - file
     - image
     - path
     - text
@@ -32,6 +34,13 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_code_sample:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   field_portfolio_images:
     weight: 36

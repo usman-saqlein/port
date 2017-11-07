@@ -1,0 +1,27 @@
+uuid: a7572618-475a-4a48-9c0e-17deb6f10628
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ifram_block
+    - field.storage.block_content.field_embed_gdrive_pdf
+  module:
+    - file
+id: block_content.ifram_block.field_embed_gdrive_pdf
+field_name: field_embed_gdrive_pdf
+entity_type: block_content
+bundle: ifram_block
+label: 'Embed GDrive PDF'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf jpg png'
+  max_filesize: '5 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

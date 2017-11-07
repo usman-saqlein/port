@@ -8,6 +8,7 @@ module:
   breakpoint: 0
   ckeditor: 0
   color: 0
+  colorbox: 0
   comment: 0
   config: 0
   contact: 0
@@ -30,8 +31,10 @@ module:
   gavias_sliderlayer: 0
   gavias_view: 0
   gaviasthemer: 0
+  gdoc_field: 0
   help: 0
   history: 0
+  iframe: 0
   image: 0
   image_url_formatter: 0
   language: 0
@@ -47,6 +50,7 @@ module:
   search: 0
   shortcut: 0
   simplenews: 0
+  smtp: 0
   system: 0
   taxonomy: 0
   text: 0

@@ -1,11 +1,12 @@
 uuid: ec313110-c0a8-41f9-b314-df47cfdad907
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - block_visibility_groups
     - gaviasthemer
     - simplenews
+    - system
   theme:
     - gavias_financial
 third_party_settings:
@@ -31,4 +32,9 @@ visibility:
     id: condition_group
     negate: false
     block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /home
+    negate: true
     context_mapping: {  }

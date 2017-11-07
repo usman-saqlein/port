@@ -1,6 +1,6 @@
 uuid: 561ac30e-f709-421b-91aa-e5f45f7e4c4f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.right_sidebar_blog

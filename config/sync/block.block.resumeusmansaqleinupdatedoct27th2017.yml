@@ -1,0 +1,35 @@
+uuid: 2ab7b209-6f94-4ad5-a501-6219a563d800
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:311bea08-4e79-4614-9354-217696a41eae'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: resumeusmansaqleinupdatedoct27th2017
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:311bea08-4e79-4614-9354-217696a41eae'
+settings:
+  id: 'block_content:311bea08-4e79-4614-9354-217696a41eae'
+  label: 'RESUME-USMAN SAQLEIN | UPDATED-OCT 27TH-2017'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

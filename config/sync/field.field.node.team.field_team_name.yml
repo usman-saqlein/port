@@ -9,7 +9,7 @@ id: node.team.field_team_name
 field_name: field_team_name
 entity_type: node
 bundle: team
-label: 'Team Name'
+label: 'Position Name'
 description: ''
 required: false
 translatable: false

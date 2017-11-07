@@ -1,0 +1,10 @@
+uuid: 773b02d2-6782-4d0b-8392-ea68e3d167e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.node_page
+label: 'Node Page'
+targetEntityType: block_content
+cache: true

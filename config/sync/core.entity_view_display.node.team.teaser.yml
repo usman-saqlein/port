@@ -8,15 +8,11 @@ dependencies:
     - field.field.node.team.field_team_contact
     - field.field.node.team.field_team_description
     - field.field.node.team.field_team_education
-    - field.field.node.team.field_team_email
     - field.field.node.team.field_team_image
     - field.field.node.team.field_team_name
     - field.field.node.team.field_team_position
-    - field.field.node.team.field_team_quote
-    - field.field.node.team.field_team_social
     - node.type.team
   module:
-    - field_collection
     - image
     - text
     - user
@@ -58,20 +54,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     region: content
-  field_team_quote:
-    type: basic_string
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_team_social:
-    type: field_collection_items
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   links:
     weight: 0
     settings: {  }
@@ -81,5 +63,4 @@ hidden:
   field_team_contact: true
   field_team_description: true
   field_team_education: true
-  field_team_email: true
   langcode: true

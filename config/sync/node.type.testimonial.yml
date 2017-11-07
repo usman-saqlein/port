@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Testimonial
 type: testimonial
-description: ''
+description: 'Meta Properties & Testimonials'
 help: ''
 new_revision: false
 preview_mode: 1

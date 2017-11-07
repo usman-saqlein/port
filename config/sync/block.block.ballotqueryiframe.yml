@@ -1,0 +1,41 @@
+uuid: f3a790f2-4042-4783-9de6-153d43376b2f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:2cad4c2d-ca65-4ac9-b33d-6cd6e25163c0'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: ballotqueryiframe
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:2cad4c2d-ca65-4ac9-b33d-6cd6e25163c0'
+settings:
+  id: 'block_content:2cad4c2d-ca65-4ac9-b33d-6cd6e25163c0'
+  label: 'Ballot Query IFRAME'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /ihome
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,46 @@
+uuid: 92e59dc8-6662-462d-a52b-cc427ebe8b91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testingcontenttype.body
+    - field.field.node.testingcontenttype.field_iframe
+    - node.type.testingcontenttype
+  module:
+    - iframe
+    - text
+    - user
+id: node.testingcontenttype.default
+targetEntityType: node
+bundle: testingcontenttype
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_iframe:
+    weight: 102
+    label: above
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+    third_party_settings: {  }
+    type: iframe_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

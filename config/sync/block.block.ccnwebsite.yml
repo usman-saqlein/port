@@ -1,0 +1,35 @@
+uuid: 63aca3a7-4146-4fda-964f-b6f134f6bb0a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:035a7421-75de-4d4d-9dd5-5f35672d9003'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: ccnwebsite
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:035a7421-75de-4d4d-9dd5-5f35672d9003'
+settings:
+  id: 'block_content:035a7421-75de-4d4d-9dd5-5f35672d9003'
+  label: 'CCN Website'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

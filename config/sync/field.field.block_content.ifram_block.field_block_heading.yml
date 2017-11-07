@@ -1,0 +1,19 @@
+uuid: acd797c0-f96d-4664-a7c9-4a6056f2aa63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ifram_block
+    - field.storage.block_content.field_block_heading
+id: block_content.ifram_block.field_block_heading
+field_name: field_block_heading
+entity_type: block_content
+bundle: ifram_block
+label: 'Block Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

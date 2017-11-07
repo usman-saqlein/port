@@ -5,27 +5,26 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_code_sample
     - field.field.node.portfolio.field_portfolio_images
     - field.field.node.portfolio.field_portfolio_information
     - field.field.node.portfolio.field_portfolio_tags
     - node.type.portfolio
   module:
-    - image
+    - gdoc_field
     - user
 id: node.portfolio.teaser
 targetEntityType: node
 bundle: portfolio
 mode: teaser
 content:
-  field_portfolio_images:
-    type: image
+  field_code_sample:
+    type: gdoc_field
     weight: 2
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_portfolio_tags:
     type: entity_reference_entity_view
     weight: 1
@@ -37,10 +36,11 @@ content:
     region: content
   links:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   body: true
+  field_portfolio_images: true
   field_portfolio_information: true
   langcode: true

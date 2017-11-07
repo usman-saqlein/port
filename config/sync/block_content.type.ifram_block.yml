@@ -1,0 +1,8 @@
+uuid: 527f1d47-f271-4603-ba9d-b3ed7b237f3e
+langcode: en
+status: true
+dependencies: {  }
+id: ifram_block
+label: 'iFram Block'
+revision: 0
+description: 'Block for embedding IFRAME Views'
