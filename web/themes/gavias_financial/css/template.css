@@ -5593,6 +5593,12 @@ nav.breadcrumb ol > li span {
   .navigation .gva_menu > li.menu-item--active-trail > a {
     color: #010101 !important;
   }
+  .navigation .gva_menu > li.menu-item--active-trail > a[href="/home#professional-experience"] {
+    color: #5eb4e7 !important;
+  }
+  .navigation .gva_menu > li.menu-item--active-trail > a:hover[href="/home#professional-experience"] {
+    color: #010101 !important;
+  }
   .navigation .gva_menu > li.megamenu.menu-columns-2 > ul.sub-menu > li {
     width: 50%;
     float: left;
