@@ -1,0 +1,9 @@
+uuid: 6e0c82ef-62f9-4b39-ac5b-fa0a11d4675f
+langcode: en
+status: true
+dependencies: {  }
+name: Class
+vid: class
+description: 'Belongs to kind -> Port(Front-end:CSS) / CH(Mining:BTC)'
+hierarchy: 0
+weight: 0

@@ -5,8 +5,8 @@ dependencies: {  }
 id: feedback
 label: 'Website feedback'
 recipients:
-  - demo@yourdomain.com
+  - usaqlein@gmail.com
 reply: ''
 weight: 0
-message: 'Your message has been sent.'
-redirect: ''
+message: 'Thanks for submitting feedback. I''ll do my best to take proper actions.'
+redirect: /home

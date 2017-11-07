@@ -1,0 +1,41 @@
+uuid: ef9adf9e-6be3-4a05-a91e-5125e86afe85
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:de4e0bd3-61e0-489e-b99b-30144f30003a'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: restfulapisgdoc
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:de4e0bd3-61e0-489e-b99b-30144f30003a'
+settings:
+  id: 'block_content:de4e0bd3-61e0-489e-b99b-30144f30003a'
+  label: 'Restful APIs GDOC'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /ghome
+    negate: false
+    context_mapping: {  }

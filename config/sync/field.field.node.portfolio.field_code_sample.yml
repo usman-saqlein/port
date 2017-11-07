@@ -1,0 +1,27 @@
+uuid: 5f0376c8-a74f-403d-a637-b4760fb32537
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_code_sample
+    - node.type.portfolio
+  module:
+    - file
+id: node.portfolio.field_code_sample
+field_name: field_code_sample
+entity_type: node
+bundle: portfolio
+label: 'Code Sample'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf jpg png'
+  max_filesize: '5 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

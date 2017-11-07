@@ -1,0 +1,41 @@
+uuid: 7279e794-7115-4370-b5cd-8a5b846117ba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ifram_block:33518d50-502b-4339-8de1-463c4de5059e'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: ballotquerygdoc
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:33518d50-502b-4339-8de1-463c4de5059e'
+settings:
+  id: 'block_content:33518d50-502b-4339-8de1-463c4de5059e'
+  label: 'Ballot Query GDOC'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /ghome
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,69 @@
+uuid: ccf24d8b-4b03-4d9f-918a-b1c29e09055d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ifram_block
+    - field.field.block_content.ifram_block.body
+    - field.field.block_content.ifram_block.field_block_heading
+    - field.field.block_content.ifram_block.field_embed_gdrive_pdf
+    - field.field.block_content.ifram_block.field_embed_iframe
+  module:
+    - file
+    - iframe
+    - text
+id: block_content.ifram_block.default
+targetEntityType: block_content
+bundle: ifram_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_block_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_embed_gdrive_pdf:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_embed_iframe:
+    weight: 3
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: 0
+      scrolling: ''
+      transparency: 0
+      tokensupport: 0
+    third_party_settings: {  }
+    type: iframe_urlwidthheight
+    region: content
+  info:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

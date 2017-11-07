@@ -1,0 +1,9 @@
+uuid: e6a1581a-54c8-4c86-a4fd-20f22906415c
+langcode: en
+status: true
+dependencies: {  }
+name: Kind
+vid: kind
+description: 'category -> Port(front end, design) CH(MasterNodes, Trading) || Belongs to Content & Event'
+hierarchy: 0
+weight: 0

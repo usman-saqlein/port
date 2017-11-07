@@ -1,0 +1,35 @@
+uuid: 9b22072a-07ca-444f-a06b-1a7d8651e32a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:ifram_block:67873912-8aed-4e7c-9516-9e51a0942dac'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: testupload
+theme: gavias_financial
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:67873912-8aed-4e7c-9516-9e51a0942dac'
+settings:
+  id: 'block_content:67873912-8aed-4e7c-9516-9e51a0942dac'
+  label: 'test upload'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

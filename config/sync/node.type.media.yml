@@ -1,0 +1,17 @@
+uuid: 400ad2c8-472f-49cb-8c77-18ae9d92b100
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Media
+type: media
+description: 'Media Type for example / Youtube / PDF / Steem IT / (LATER)'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

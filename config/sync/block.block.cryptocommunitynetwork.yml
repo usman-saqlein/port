@@ -1,9 +1,9 @@
-uuid: 533d9a5c-6a17-434a-acf8-b282658fbe11
+uuid: 64683c78-055d-4bed-9754-47653ab85eae
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e03afdfc-b255-481b-9605-5a0e153ccacf'
+    - 'block_content:ifram_block:035a7421-75de-4d4d-9dd5-5f35672d9003'
   module:
     - block_content
     - block_visibility_groups
@@ -13,20 +13,20 @@ dependencies:
 third_party_settings:
   gaviasthemer:
     classes: ''
-id: gavias_financial_linkfooter
+id: cryptocommunitynetwork
 theme: gavias_financial
-region: footer_second
-weight: -11
+region: other
+weight: 0
 provider: null
-plugin: 'block_content:e03afdfc-b255-481b-9605-5a0e153ccacf'
+plugin: 'block_content:035a7421-75de-4d4d-9dd5-5f35672d9003'
 settings:
-  id: 'block_content:e03afdfc-b255-481b-9605-5a0e153ccacf'
-  label: 'Link Footer'
+  id: 'block_content:035a7421-75de-4d4d-9dd5-5f35672d9003'
+  label: 'CRYPTO COMMUNITY NETWORK'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
-  view_mode: full
+  view_mode: default
 visibility:
   condition_group:
     id: condition_group

@@ -14,25 +14,17 @@ mode: default
 content:
   field_contact_help:
     weight: 1
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  langcode:
-    type: language
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
   message:
     type: basic_string
     weight: 0
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true

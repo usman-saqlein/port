@@ -1,6 +1,6 @@
 uuid: f302252f-8e91-4354-ad20-a5ac2d573f66
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:0c1ecc6e-1d39-4ec0-a502-2c557762945e'
@@ -8,6 +8,7 @@ dependencies:
     - block_content
     - block_visibility_groups
     - gaviasthemer
+    - system
   theme:
     - gavias_financial
 third_party_settings:
@@ -16,7 +17,7 @@ third_party_settings:
 id: gavias_financial_contactinfo
 theme: gavias_financial
 region: footer_first
-weight: -11
+weight: -20
 provider: null
 plugin: 'block_content:0c1ecc6e-1d39-4ec0-a502-2c557762945e'
 settings:
@@ -32,4 +33,9 @@ visibility:
     id: condition_group
     negate: false
     block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /home
+    negate: true
     context_mapping: {  }

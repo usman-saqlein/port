@@ -9,8 +9,8 @@ id: node.team.field_team_education
 field_name: field_team_education
 entity_type: node
 bundle: team
-label: 'Team Education'
-description: 'Sample: MBA, Rotterdam School of Management, Erasmus University'
+label: 'Position Responsiblities'
+description: 'Developed the database'
 required: false
 translatable: false
 default_value: {  }

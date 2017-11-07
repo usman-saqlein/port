@@ -1,0 +1,10 @@
+uuid: 3104c861-c641-49bf-9871-301f86d5d1df
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.listing_page
+label: 'Listing Page'
+targetEntityType: block_content
+cache: true

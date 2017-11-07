@@ -5,8 +5,8 @@ dependencies: {  }
 id: request_call_back
 label: 'Request Call Back'
 recipients:
-  - your-demo@gmail.com
+  - usaqlein@gmail.com
 reply: ''
 weight: 0
-message: ''
-redirect: ''
+message: 'Thanks for submitting the request. I’ll will be in touch shortly. '
+redirect: '/#'

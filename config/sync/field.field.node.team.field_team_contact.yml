@@ -9,7 +9,7 @@ id: node.team.field_team_contact
 field_name: field_team_contact
 entity_type: node
 bundle: team
-label: 'Team contact'
+label: 'Position Fields'
 description: 'Sample: Phone : 61 3 8376 6284 or Email : youremail@gmail.com'
 required: false
 translatable: false

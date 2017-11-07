@@ -15,11 +15,11 @@ settings:
       value: 'I would like to discuss'
       label: 'I would like to discuss'
     -
-      value: 'Retirement Planning'
-      label: 'Retirement Planning'
+      value: 'Position / Opportunity'
+      label: 'Position / Opportunity'
     -
-      value: 'Global consumer insights'
-      label: 'Global consumer insights'
+      value: 'General Questions / Other'
+      label: 'General Questions / Other'
   allowed_values_function: ''
 module: options
 locked: false

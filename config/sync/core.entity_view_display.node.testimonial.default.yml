@@ -30,7 +30,7 @@ content:
     label: above
     settings:
       image_style: ''
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
     region: content
@@ -61,5 +61,7 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

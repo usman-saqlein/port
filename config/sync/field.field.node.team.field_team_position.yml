@@ -9,7 +9,7 @@ id: node.team.field_team_position
 field_name: field_team_position
 entity_type: node
 bundle: team
-label: 'Team Position'
+label: 'Position Sub Header'
 description: ''
 required: false
 translatable: false

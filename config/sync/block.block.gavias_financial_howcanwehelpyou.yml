@@ -36,6 +36,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/blogs-masonry\r\n/blogs-grid\r\n/portfolio-1\r\n/portfolio\r\n/portfolio-3\r\n/portfolio-2"
+    pages: "/blogs-masonry\r\n/blogs-grid\r\n/portfolio-1\r\n/portfolio\r\n/portfolio-3\r\n/portfolio-2\r\n/bbtest\r\n/code-samples\r\n"
     negate: true
     context_mapping: {  }
