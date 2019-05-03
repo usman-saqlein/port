@@ -10330,3 +10330,36 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
   background: #f0ad4e;
 }
 
+.scroll-down-bottom-pic {
+  transition: 3s ease;
+  /*border: 5px solid #5EB4E7;*/
+  border: 5px solid #000000;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.scroll-down-bottom-pic:hover {
+  background-position: left bottom !important;
+}
+
+.center {
+  text-align: center !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.iconblock-view {
+  border-bottom: 1px solid #ccc;
+}
+.node--type-icon-blocks {
+  padding: 20px 0;
+  border-radius: 3px;
+}
+.node--type-icon-blocks:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+.grey-border {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
